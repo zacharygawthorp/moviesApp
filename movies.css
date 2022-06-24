@@ -1,0 +1,58 @@
+h1 {
+	text-align: center;
+	color: white;
+}
+body {
+	background-color: black;
+}
+
+label {
+	color: white;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+}
+
+form div {
+	padding-right: 15px;
+}
+
+.movieResults {
+	width: 750PX;
+	height: 750px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border-collapse: collapse;
+}
+
+.tableHead {
+	position: absolute;
+	font-size: 25px;
+	top: 10%;
+	transform: translate(0, -50%);
+}
+
+.tableMovieTitle,
+.tableRating,
+.deleteBtnTh {
+	text-align: center;
+	width: 250px;
+	border-bottom: 2px solid black;
+	padding: 10px;
+}
+
+#movieTableBody {
+	position: absolute;
+	top: 13%;
+}
+
+td {
+	text-align: center;
+	width: 250px;
+	border-bottom: 2px solid black;
+	padding: 10px;
+}

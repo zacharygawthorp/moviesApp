@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+    <h1>My Movie Ratings!</h1>
+<body>
+    <form class="form" id="newMovie">
+        <div>
+            <label for="movieTitleInput" value="MovieTitle">Movie Title</label>
+            <input type="text" required id="title" class="movieTitleInput" type="text">
+        </div>
+        <div>
+            <label for="ratingInput" value="Rating">Rating</label>
+            <input type="number" required min="0" max="10" id="rating" class="ratingInput" type="text">
+        </div>
+        <div>
+            <label for="btn" value="submitBtn"></label>
+            <input type="submit" id="sumbitBtn" class="btn">
+        </div>
+    </form>
+    <br>
+    <table class="movieResults">
+        <thead class="tableHead">
+            <tr>
+                <th scope="col" id="title" class="tableMovieTitle">Movie Title</th>
+                <th scope="col" id="rating" class="tableRating">Rating</th>
+                <th scope="col" class="deleteBtnTh">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movieTableBody"></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="movies.js"></script>        
+</body>
+</html>
